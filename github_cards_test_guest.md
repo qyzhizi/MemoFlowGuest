@@ -1,3 +1,16 @@
+- ## 2023/7/23 10:42:58:
+	- #code
+	  #que hello world Go 代码
+	- #ans
+	  ```
+	  package main
+	  
+	  import "fmt"
+	  
+	  func main() {
+	      fmt.Println("Hello, World!")
+	  }
+	  ```
 - ## 2023/7/23 10:38:15:
 	- #github #同步
 	  #que 当前页面对应的远程仓库文件
