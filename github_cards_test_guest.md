@@ -1,3 +1,30 @@
+- ## 2023/8/21 22:59:51:
+	- #code
+	  #que docker 构建镜像, 并推送到dockerhub
+	- #ans
+	  dockerfile 安装软件, 并清理安装包, python:3.10-slim-bookworm 是不错的python的, debain 基础镜像.
+	  ```
+	  FROM python:3.10-slim-bookworm as builder
+	  
+	  RUN apt-get update --fix-missing && apt-get install -y --fix-missing \
+	  build-essential \
+	  gcc \
+	  g++ && \
+	  rm -rf /var/lib/apt/lists/*
+	  ```
+	  
+	  不使用缓存构建镜像
+	  ```
+	  docker build -t memoflow:v0.1.2 --no-cache .
+	  ```
+	  给镜像打标签
+	  ```
+	  docker tag 01c67cc7606d92c846c378cee220eff42b7621355bcd6d90c8524e37095dd2a2 qyzhizi/memoflow:v0.1.2
+	  ```
+	  推送镜像到dockerhub
+	  ```
+	  docker push qyzhizi/memoflow:v0.1.2
+	  ```
 - ## 2023/7/23 15:21:08:
   浮空
 - ## 2023/7/23 11:17:36:
