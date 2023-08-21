@@ -1,3 +1,17 @@
+- ## 2023/8/21 23:29:33:
+	- #vim #code
+	  #que vim 区域选择
+	- #ans
+	  假设你有一个字符串 `(map (+) ("foo"))` .而光标键在第一个 o 的位置。
+	  ```
+	  vi" → 会选择 foo.
+	  va" → 会选择 "foo".
+	  vi) → 会选择 "foo".
+	  va) → 会选择("foo").
+	  v2i) → 会选择 map (+) ("foo")
+	  v2a) → 会选择 (map (+) ("foo"))
+	  ```
+	  ![](http://qyzhizi.cn/img/202308061414532.png)
 - ## 2023/8/21 22:59:51:
 	- #code
 	  #que docker 构建镜像, 并推送到dockerhub
