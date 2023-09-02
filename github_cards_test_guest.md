@@ -1,3 +1,11 @@
+- ## 2023/9/2 10:04:49:
+	- #code
+	  #que 查看 docker 容器的所属网络
+	- #ans
+	  ```
+	  docker inspect -f '{{.NetworkSettings.Networks}}' eee7698d23e6574c369f4e7fa039e0a7f94b23173169740d411c7ec6ad984297
+	  map[dockerize-chromadb_net:0xc00041a000]
+	  ```
 - ## 2023/8/27 10:19:32:
 	- #que test84783
 - ## 2023/8/22 00:00:55:
