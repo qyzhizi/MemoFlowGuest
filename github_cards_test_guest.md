@@ -1,3 +1,14 @@
+- ## 2023/9/12 05:48:31:
+	- #code 
+	  #que Installing Docker and Docker Compose
+	- #ans
+	  using Docker's official helper script:
+	  curl -L https://get.docker.com | sh
+	  To run Docker commands without using sudo
+	  ```
+	  sudo usermod -aG docker $USER
+	  sudo reboot
+	  ```
 - ## 2023/9/6 18:16:58:
 	- #que lzp 454754654765786545465
 - ## 2023/9/5 16:42:38:
