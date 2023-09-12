@@ -1,3 +1,21 @@
+- ## 2023/9/13 07:59:18:
+	- #tools
+	  #que MobaXterm ssh pem文件 连接?
+	- #ans
+	  要通过MobaXterm使用SSH密钥（.pem文件）连接到AWS实例，可以按照以下步骤进行操作：
+	  
+	  1. 启动 MobaXterm 并打开 "Session" 窗口。
+	  2. 在 "Session" 窗口中，选择 "SSH" 类型。
+	  3. 在 "Remote host" 字段中，输入 AWS 实例的公共 IP 地址或公共 DNS。
+	  4. 在 "Specify username" 字段中，输入 SSH 用户名。例如，对于 Amazon Linux 实例，用户名是 "ec2-user"，对于 Ubuntu 实例，用户名是 "ubuntu"。
+	  5. 在 "Advanced SSH settings" 部分的 "Use private key" 选项中，选择 "Browse"。
+	  6. 在弹出的对话框中，导航到存储了 .pem 密钥文件的位置，并选择该文件。
+	  7. 确认其他连接设置，如端口号等。
+	  8. 单击 "OK" 开始 SSH 连接。
+	  
+	  MobaXterm 将使用提供的 SSH 密钥文件进行身份验证，并与 AWS 实例建立安全连接。
+	  
+	  请注意，确保已将 .pem 密钥文件下载到本地计算机，并且具有适当的权限（例如，只有所有者具有读取权限）。此外，还需要确保 AWS 实例的安全组配置允许通过 SSH 连接。
 - ## 2023/9/12 05:48:31:
 	- #code 
 	  #que Installing Docker and Docker Compose
