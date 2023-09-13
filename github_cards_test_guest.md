@@ -1,3 +1,34 @@
+- ## 2023/9/13 23:36:44:
+	- #code
+	  #que 记录docker某个容器的内存消耗的脚本
+	- #ans
+	  ```
+	  #!/bin/bash
+	  
+	  # 容器名称或ID
+	  CONTAINER_NAME="836ae4856280"
+	  
+	  # 输出文件路径
+	  OUTPUT_FILE="./output.txt"
+	  
+	  # 创建输出文件的目录（如果不存在）
+	  mkdir -p "$(dirname "$OUTPUT_FILE")"
+	  
+	  # 循环获取容器内存消耗并写入文件
+	  while true; do
+	      # 获取容器的内存使用情况
+	      MEMORY_USAGE=$(docker stats --no-stream --format "{{.MemUsage}}" $CONTAINER_NAME)
+	  
+	      # 获取当前时间戳
+	      TIMESTAMP=$(date +"%Y-%m-%d %H:%M:%S")
+	  
+	      # 写入时间戳和内存消耗到文件
+	      echo "$TIMESTAMP $MEMORY_USAGE" >> $OUTPUT_FILE
+	  
+	      # 等待一段时间后继续循环
+	      sleep 60
+	  done
+	  ```
 - ## 2023/9/13 09:48:41:
 	- #que lzp 437534957834957943
 - ## 2023/9/13 09:46:52:
