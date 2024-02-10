@@ -8,8 +8,6 @@
 	  #que Paul Graham 《如何做好的工作》
 	- #ans
 	  http://paulgraham.com/greatwork.html
-- ## 2023/7/23 10:36:16:
-  - TODO  编辑、删除卡片笔记，导出当前同步文件（mardown 格式）
 - ## 2023/7/23 10:38:15:
 	- #github #同步
 	  #que 当前页面对应的远程仓库文件
