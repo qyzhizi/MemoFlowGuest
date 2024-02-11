@@ -168,6 +168,7 @@
 	  
 	  # 容器名称或ID
 	  CONTAINER_NAME="836ae4856280"
+	  # test
 	  
 	  # 输出文件路径
 	  OUTPUT_FILE="./output.txt"
@@ -177,17 +178,17 @@
 	  
 	  # 循环获取容器内存消耗并写入文件
 	  while true; do
-	      # 获取容器的内存使用情况
-	      MEMORY_USAGE=$(docker stats --no-stream --format "{{.MemUsage}}" $CONTAINER_NAME)
+	  # 获取容器的内存使用情况
+	  MEMORY_USAGE=$(docker stats --no-stream --format "{{.MemUsage}}" $CONTAINER_NAME)
 	  
-	      # 获取当前时间戳
-	      TIMESTAMP=$(date +"%Y-%m-%d %H:%M:%S")
+	  # 获取当前时间戳
+	  TIMESTAMP=$(date +"%Y-%m-%d %H:%M:%S")
 	  
-	      # 写入时间戳和内存消耗到文件
-	      echo "$TIMESTAMP $MEMORY_USAGE" >> $OUTPUT_FILE
+	  # 写入时间戳和内存消耗到文件
+	  echo "$TIMESTAMP $MEMORY_USAGE" >> $OUTPUT_FILE
 	  
-	      # 等待一段时间后继续循环
-	      sleep 60
+	  # 等待一段时间后继续循环
+	  sleep 60
 	  done
 	  ```
 - ## 2023/9/18 05:05:41:
