@@ -178,7 +178,7 @@
 	  
 	  # 循环获取容器内存消耗并写入文件
 	  while true; do
-	  # 获取容器的内存使用情况
+	    # 获取容器的内存使用情况
 	  MEMORY_USAGE=$(docker stats --no-stream --format "{{.MemUsage}}" $CONTAINER_NAME)
 	  
 	  # 获取当前时间戳
