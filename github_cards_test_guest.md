@@ -168,7 +168,6 @@
 	  
 	  # 容器名称或ID
 	  CONTAINER_NAME="836ae4856280"
-	  # test
 	  
 	  # 输出文件路径
 	  OUTPUT_FILE="./output.txt"
