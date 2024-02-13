@@ -1,16 +1,8 @@
-## 2024/2/13 19:42:46:
-  dlsjflsjdfsafjs
-  - dljfsafjsf
-  lsdfjsfjs;
-  - lsdjfsjdfl
-- ## 2023/7/23 10:33:57:
+## 2023/7/23 10:33:57:
 	- #数据库
 	  #que 向量数据库
 	- #ans
 	  https://twitter.com/dotey/status/1682861683742572546?s=20
-		- 345678
-		- sdfg
-		- 23456789fgh
 - ## 2023/7/23 10:34:54:
 	- #博客
 	  #que Paul Graham 《如何做好的工作》
