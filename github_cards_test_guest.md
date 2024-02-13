@@ -94,8 +94,6 @@
 	  docker inspect -f '{{.NetworkSettings.Networks}}' eee7698d23e6574c369f4e7fa039e0a7f94b23173169740d411c7ec6ad984297
 	  map[dockerize-chromadb_net:0xc00041a000]
 	  ```
-- ## 2023/9/5 16:22:24:
-	- #que lzp 36945-6954-7
 - ## 2023/9/5 16:40:38:
 	- #que lzp 5657686789
 - ## 2023/9/5 16:41:46:
