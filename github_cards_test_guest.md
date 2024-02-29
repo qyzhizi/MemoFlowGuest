@@ -1,4 +1,16 @@
-## 2024/2/24 07:23:10:
+## 2024/2/29 09:44:08:
+	- #code
+	  #que 支持 LaTeX 公式
+	- #ans
+	  公式使用 $ ... $ 或者 $$ ... $$ 来标识， 然后点击右侧下拉按钮 `latexView` 即可展示
+	  
+	  Here is a LaTeX equation: $$\int_{-\infty}^{\infty} e^{-x^2} \, dx = \sqrt{\pi}$$
+	  
+	  $$\int_{-\infty}^{\infty} e^{-x^2} \, dx = \sqrt{\pi}$$  djflsdjslfs
+	  $$\int_{a}^{b} x^2 \,dx = \frac{1}{3}x^3 \Big|_{a}^{b}$$ lsdjflsjfsld
+	  
+	  https://chat.openai.com/c/4e717e2d-4714-42ba-a1f1-94ff54499f44
+- ## 2024/2/24 07:23:10:
   123456789
   123456789345678
 - ## 2023/7/23 10:33:57:
