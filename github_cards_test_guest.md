@@ -1,4 +1,20 @@
-## 2024/2/29 22:57:42:
+## 2024/3/1 00:27:45:
+    #task
+	- gemma 模型 ：gemma:7b-instruct-fp16 是什么意思？
+	- https://x.com/rasbt/status/1761394305661321255?s=20
+	  #que sdfjlsfjw
+	- #ans
+		- dsljfsljfsd
+		- djfsdljfsldfj
+			- dlfjlsdfjsdlf
+			  sdfjslfjsdlfjsldf
+			  
+			  sdlfjsldfjsldfjs
+	- #sque dlfsjlfjsdfjs
+	- #sans
+		- djfslfjslfj
+		- djslfjsdlfjs
+- ## 2024/2/29 22:57:42:
   #task
 	- gemma 模型 ：gemma:7b-instruct-fp16 是什么意思？
 	- https://x.com/rasbt/status/1761394305661321255?s=20
