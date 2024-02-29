@@ -1,6 +1,6 @@
 ## 2024/3/1 03:15:15:
   #code
-  
+  ```
   function splitStringWithPattern(inputString, pattern_t) {
       // 检查 pattern_t 是否是带有全局标志的正则表达式
       if (!pattern_t.global) {
@@ -22,6 +22,7 @@
           match_list.push(inputString.substring(old_index));}
       return match_list;
   }
+  ```
 - ## 2024/3/1 00:27:45:
   #task
 	- gemma 模型 ：gemma:7b-instruct-fp16 是什么意思？
