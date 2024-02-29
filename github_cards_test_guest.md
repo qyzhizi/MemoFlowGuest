@@ -2,6 +2,14 @@
   #task
 	- gemma 模型 ：gemma:7b-instruct-fp16 是什么意思？
 	- https://x.com/rasbt/status/1761394305661321255?s=20
+	  #que sdfjlsfjw
+	- #ans
+		- dsljfsljfsd
+		- djfsdljfsldfj
+			- dlfjlsdfjsdlf
+			  sdfjslfjsdlfjsldf
+	  
+	  sdlfjsldfjsldfjs
 - ## 2024/2/29 09:44:08:
 	- #code
 	  #que 支持 LaTeX 公式
