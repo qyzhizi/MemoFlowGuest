@@ -1,4 +1,9 @@
-## 2024/3/1 03:15:15:
+## 2024/3/1 04:44:08:
+	- #test
+	  #que 这是一个测试 943579345
+	- #ans
+	  test
+- ## 2024/3/1 03:15:15:
   #code
   ```
   function splitStringWithPattern(inputString, pattern_t) {
