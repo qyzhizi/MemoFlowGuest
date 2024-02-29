@@ -1,4 +1,28 @@
-## 2024/3/1 00:27:45:
+## 2024/3/1 03:15:15:
+  #code
+  
+  function splitStringWithPattern(inputString, pattern_t) {
+      // 检查 pattern_t 是否是带有全局标志的正则表达式
+      if (!pattern_t.global) {
+      console.error("Error: pattern_t must have the global (g) flag.");
+      return;
+      }
+      let match;
+      let match_list = [];
+      let old_index = 0;
+      
+      while ((match = pattern_t.exec(inputString)) !== null) {
+          match_list.push(inputString.substring(old_index, match.index));
+          match_list.push(match[0]);
+          // pattern_t.lastIndex 用于记录正则表达式匹配的最后一个字符的位置
+          // 这要求pattern_t 是带有 g (global) 标志的正则表达式，否则一直是 0
+          old_index = pattern_t.lastIndex;
+      }
+      if (old_index != 0){
+          match_list.push(inputString.substring(old_index));}
+      return match_list;
+  }
+- ## 2024/3/1 00:27:45:
   #task
 	- gemma 模型 ：gemma:7b-instruct-fp16 是什么意思？
 	- https://x.com/rasbt/status/1761394305661321255?s=20
