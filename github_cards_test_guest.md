@@ -91,7 +91,7 @@
 	  ertyuio
 - ## 2023/7/23 10:34:54:
 	- #博客
-	  #que Paul Graham 《如何做好的工作》博文
+	  #que Paul Graham 《如何做好的工作》
 	- #ans
 	  http://paulgraham.com/greatwork.html
 - ## 2023/7/23 10:38:15:
