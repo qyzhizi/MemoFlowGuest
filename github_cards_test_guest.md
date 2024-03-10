@@ -71,7 +71,7 @@
 	- #code
 	  #que 支持 LaTeX 公式
 	- #ans
-	  公式使用 $$...$$ 或者 $$...$$ 来标识， 然后点击右侧下拉按钮 `latexView` 即可展示
+	  公式使用 `$$...$$` 或者 `$$...$$` 来标识， 然后点击右侧下拉按钮 `latexView` 即可展示
 	  
 	  Here is a LaTeX equation: $$\int_{-\infty}^{\infty} e^{-x^2} \, dx = \sqrt{\pi}$$
 	  
