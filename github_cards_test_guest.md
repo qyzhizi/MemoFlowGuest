@@ -75,8 +75,8 @@
 	  
 	  Here is a LaTeX equation: $$\int_{-\infty}^{\infty} e^{-x^2} \, dx = \sqrt{\pi}$$
 	  
-	  $$\int_{-\infty}^{\infty} e^{-x^2} \, dx = \sqrt{\pi}$$  djflsdjslfs
-	  $$\int_{a}^{b} x^2 \,dx = \frac{1}{3}x^3 \Big|_{a}^{b}$$ lsdjflsjfsld
+	  $$\int_{-\infty}^{\infty} e^{-x^2} \, dx = \sqrt{\pi}$$  
+	  $$\int_{a}^{b} x^2 \,dx = \frac{1}{3}x^3 \Big|_{a}^{b}$$ 
 	  
 	  https://chat.openai.com/c/4e717e2d-4714-42ba-a1f1-94ff54499f44
 	  让我们解释一下：
