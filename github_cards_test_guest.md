@@ -1,4 +1,11 @@
-## 2024/4/18 00:11:56:
+## 2024/4/19 01:29:41:
+  Show Your Work!
+  The Book in 3 Sentences
+  
+  1. Share your thoughts and your process and your work, online, for free. 
+  2. You don’t need to be an expert to share your work - beginners can easily help other beginners. 
+  3. By sharing your work online, you’ll attract an audience of people who care about the same stuff you do  this can change your life.
+- ## 2024/4/18 00:11:56:
   你好，
 - ## 2024/4/17 22:39:07:
   test
@@ -30,9 +37,7 @@
 - ## 2024/3/20 15:11:58:
   df;gkds;gkdl;gdsss
   000
-  ttt
-  23444～
-  哈哈哈哈
+  tttt
 - ## 2024/3/20 15:09:13:
   slfjsljf1111hhh
 - ## 2024/3/20 09:34:56:
