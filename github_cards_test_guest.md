@@ -11,7 +11,7 @@
   2. You don’t need to be an expert to share your work - beginners can easily help other beginners. 
   3. By sharing your work online, you’ll attract an audience of people who care about the same stuff you do  this can change your life.
 - ## 2024/4/18 00:11:56:
-  你好，
+  你好!
 - ## 2024/4/17 22:39:07:
   test
 - ## 2024/3/24 11:00:05:
