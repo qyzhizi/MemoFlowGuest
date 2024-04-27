@@ -1,4 +1,13 @@
-## 2024/4/27 13:27:44:
+## 2024/4/27 13:30:03:
+	- #code #向量数据库
+	  #que chroma 向量数据库
+	- #ans
+	  chroma 使用 sqlite3 存储数据，因此它是内存数据库
+	  
+	  https://docs.trychroma.com/embeddings#sentence-transformers
+	  
+	  向量数据库选型：https://guangzhengli.com/blog/zh/vector-database/#%E5%90%91%E9%87%8F%E6%95%B0%E6%8D%AE%E5%BA%93%E9%80%89%E5%9E%8B
+- ## 2024/4/27 13:27:44:
 	- #twitter
 	  #que 吴恩达 twitter
 	- #ans
