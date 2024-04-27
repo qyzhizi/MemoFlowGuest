@@ -1,4 +1,55 @@
-## 2024/4/27 15:55:46:
+## 2024/4/27 16:10:52:
+	- #code
+	  #que 快速排序 go 语言算法
+	- #ans
+	  下面是使用Go语言实现的快速排序算法示例：
+	  
+	  ```go
+	  package main
+	  
+	  import "fmt"
+	  
+	  func quickSort(arr []int, low, high int) {
+	  	if low < high {
+	  		pivot := partition(arr, low, high)
+	  		quickSort(arr, low, pivot-1)
+	  		quickSort(arr, pivot+1, high)
+	  	}
+	  }
+	  
+	  func partition(arr []int, low, high int) int {
+	  	pivot := arr[high]
+	  	i := low - 1
+	  	for j := low; j < high; j++ {
+	  		if arr[j] < pivot {
+	  			i++
+	  			arr[i], arr[j] = arr[j], arr[i]
+	  		}
+	  	}
+	  	arr[i+1], arr[high] = arr[high], arr[i+1]
+	  	return i + 1
+	  }
+	  
+	  func main() {
+	  	arr := []int{10, 7, 8, 9, 1, 5}
+	  	n := len(arr)
+	  	quickSort(arr, 0, n-1)
+	  	fmt.Println("Sorted array:", arr)
+	  }
+	  ```
+	  
+	  在上面的示例中，`quickSort`函数实现了快速排序算法，它接受一个整数切片 `arr`、切片的起始索引 `low` 和结束索引 `high` 作为参数。在每次递归调用中，函数通过 `partition` 函数将切片分成两部分，并使用递归方式对这两部分进行排序。`partition` 函数选择 `arr[high]` 作为枢纽元素（pivot），并将小于枢纽元素的元素移到枢纽元素的左边，大于枢纽元素的元素移到右边。最后，返回枢纽元素的索引。
+	  
+	  在 `main` 函数中，我们定义了一个整数切片 `arr`，并调用 `quickSort` 函数对其进行排序。最后，打印排序后的结果。
+	  
+	  运行以上代码，将输出排序后的数组：
+	  
+	  ```
+	  Sorted array: [1 5 7 8 9 10]
+	  ```
+	  
+	  这就是使用Go语言实现的快速排序算法。希望对你有帮助！
+- ## 2024/4/27 15:55:46:
 	- #math
 	  #que 2维矩阵乘法, 举个例子
 	- #ans
