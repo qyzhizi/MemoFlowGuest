@@ -1,4 +1,10 @@
-## 2024/4/18 00:11:56:
+## 2024/4/27 13:27:44:
+	- #twitter
+	  #que 吴恩达 twitter
+	- #ans
+	  https://twitter.com/AndrewYNg
+	  https://www.deeplearning.ai/the-batch/issue-245/
+- ## 2024/4/18 00:11:56:
   你好，
 - ## 2024/3/24 11:00:05:
 	- #web
