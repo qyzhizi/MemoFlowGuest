@@ -1,4 +1,26 @@
-## 2024/4/29 00:15:14:
+## 2024/4/29 09:00:29:
+	- #code
+	  #que 公式 latex equation 编号
+	- #ans
+	  $$
+	  \begin{equation}
+	  \int_{a}^{b} x^2 \,dx = \frac{1}{3}x^3 \Bigg|_{a}^{b}
+	  \end{equation}
+	  $$
+	  $$
+	  \begin{equation}
+	  \int_{a}^{b} x^2 \,dx = \frac{1}{3}x^3 \Bigg|_{a}^{b}
+	  \end{equation}
+	  $$
+	  $$
+	  \begin{equation}
+	  E=mc^2
+	  \end{equation}
+	  $$
+	  $$
+	  E=mc^2 \quad (1)
+	  $$
+- ## 2024/4/29 00:15:14:
   $$ b = a + c $$
 - ## 2024/4/27 16:10:52:
 	- #code
