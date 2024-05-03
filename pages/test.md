@@ -2,7 +2,7 @@
   #code
    `body` 
   ```
-  $
+  1
   ```
   
   这段代码的意思是，不直接在 `#cancel-account-info-edit`
