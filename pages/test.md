@@ -1,7 +1,7 @@
 ## 2024/5/3 09:37:08:
   #code
    `body` 
-  ```javascript
+  ```
   $('body').on('click', '#cancel-account-info-edit', function() {
       $('.dialog-wrapper.update-account-dialog.showup').removeClass('showup').addClass('showoff');
   });
