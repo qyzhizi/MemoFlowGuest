@@ -13,7 +13,6 @@
 	      $('.dialog-wrapper.update-account-dialog.showup').removeClass('showup').addClass('showoff');
 	  });
 	  ```
-	  
 	  这段代码的意思是，不直接在 `#cancel-account-info-edit` 上绑定点击事件，而是在 `body` 上绑定。只要点击事件在 `#cancel-account-info-edit` 上发生并冒泡到 `body`，就会触发这个处理函数。这样，无论 `#cancel-account-info-edit` 何时被添加到DOM中，这个点击事件处理函数都能正常工作。
 	  
 	  如果这个方法解决了你的问题，那么原因就是事件绑定没有正确处理动态添加的元素。如果问题依旧，可能需要进一步检查其他潜在的问题，比如是否有其他脚本错误干扰了事件的正常触发等。
