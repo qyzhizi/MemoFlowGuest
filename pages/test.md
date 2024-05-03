@@ -2,11 +2,7 @@
   #code
    是后来动态添加到DOM中的，或者其父元素是动态变化的，你可以尝试使用事件委托。下面是一个使用事件委托的例子，，这里假设 `body` 是该按钮的一个静态父元素（你可以根据实际情况选择更合适的静态父元素）：
   
-  ```javascript
-  $('body').on('click', '#cancel-account-info-edit', function() {
-      $('.dialog-wrapper.update-account-dialog.showup').removeClass('showup').addClass('showoff');
-  });
-  ```
+  
   
   这段代码的意思是，不直接在 `#cancel-account-info-edit`
 - ## 2024/5/3 09:35:24:
