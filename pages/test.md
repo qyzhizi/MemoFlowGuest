@@ -12,6 +12,7 @@
 	  $('body').on('click', '#cancel-account-info-edit', function() {
 	      $('.dialog-wrapper.update-account-dialog.showup').removeClass('showup').addClass('showoff');
 	  });
+	  `sdljflsdjfsl`
 	  ```
 	  
 	  这段代码的意思是，不直接在 `#cancel-account-info-edit` 上绑定点击事件，而是在 `body` 上绑定。只要点击事件在 `#cancel-account-info-edit` 上发生并冒泡到 `body`，就会触发这个处理函数。这样，无论 `#cancel-account-info-edit` 何时被添加到DOM中，这个点击事件处理函数都能正常工作。
