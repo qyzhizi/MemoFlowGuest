@@ -2,9 +2,7 @@
   #code
    `body` 
   ```
-  $('body').on('click', '#cancel-account-info-edit', function() {
-      $('.dialog-wrapper.update-account-dialog.showup').removeClass('showup').addClass('showoff');
-  });
+  $
   ```
   
   这段代码的意思是，不直接在 `#cancel-account-info-edit`
