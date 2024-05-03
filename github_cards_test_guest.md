@@ -152,7 +152,7 @@
 	- #code
 	  #que memoflow 添加 latex 支持
 	- #ans
-	   公式使用 `$...$` 或者 `$$...$$` 来标识
+	   公式使用 `$...$` 或者 `$$...$$` 来标识，前者是行内共公式，后者是行间公式
 	  例如：
 	  Here is a LaTeX equation: $$\int_{-\infty}^{\infty} e^{-x^2} \, dx = \sqrt{\pi}$$
 	  $$\int_{-\infty}^{\infty} e^{-x^2} \, dx = \sqrt{\pi}$$  
