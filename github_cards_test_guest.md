@@ -152,7 +152,7 @@
 	- #code
 	  #que memoflow 添加 latex 支持
 	- #ans
-	   公式使用 `$...$` 或者 `$$...$$` 来标识， 然后点击右侧下拉按钮 `latexView` 即可展示， 注意标识前面要有空格或者换行，否者不会解析为公式
+	   公式使用 `$...$` 或者 `$$...$$` 来标识
 	  例如：
 	  Here is a LaTeX equation: $$\int_{-\infty}^{\infty} e^{-x^2} \, dx = \sqrt{\pi}$$
 	  $$\int_{-\infty}^{\infty} e^{-x^2} \, dx = \sqrt{\pi}$$  
