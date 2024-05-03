@@ -1,6 +1,6 @@
 ## 2024/5/3 09:37:08:
   #code
-   `body` 是该按钮的一个静态父元素（你可以根据实际情况选择更合适的静态父元素）：
+   `body` 
   
   ```javascript
   $('body').on('click', '#cancel-account-info-edit', function() {
