@@ -4,6 +4,11 @@
 	  #que sticky top 的使用方法
 	- #ans
 	  https://github.com/qyzhizi/python_logical/blob/main/2024-04-19-html-top-sticky/test.html#L17
+	  ```
+	  position: sticky;
+	  top: 10px;
+	  left: 800px;
+	  ```
 - ## 2024/5/3 11:29:53:
 	- #正则匹配 #code
 	  #que `/(?<!#)#.*?(?=\x20|\n)/g;`修改表达式, 我希望开头只会有一个
