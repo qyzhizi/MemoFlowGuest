@@ -4,7 +4,7 @@
 	  #que sticky top 的使用方法
 	- #ans
 	  https://github.com/qyzhizi/python_logical/blob/main/2024-04-19-html-top-sticky/test.html#L17
-	  ```
+	  ```css
 	  position: sticky;
 	  top: 10px;
 	  left: 800px;
