@@ -1,4 +1,18 @@
-## 2024/5/3 11:29:53:
+## 2024/5/3 12:16:58:
+  @@ 2024/4/19 08:42:54:
+	- #code
+	  #que sticky top 的使用方法
+	- #ans
+	  https://github.com/qyzhizi/python_logical/blob/main/2024-04-19-html-top-sticky/test.html#L17
+	  ```
+	  position: sticky;
+	  top: 10px;
+	  left: 800px;
+	  ```
+	  
+	  为什么 这里 设置 left 没有反应?
+	  根据您提供的CSS代码，`position: sticky;`将元素设置为"粘性定位"，这意味着元素在滚动时会固定在父容器中的指定位置。然而，`left: 800px;`属性对于粘性定位的元素来说并没有效果。
+- ## 2024/5/3 11:29:53:
 	- #正则匹配 #code
 	  #que `/(?<!#)#.*?(?=\x20|\n)/g;`修改表达式, 我希望开头只会有一个
 - ## 2024/5/3 10:32:10:
