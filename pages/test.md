@@ -2,7 +2,6 @@
 	- #正则匹配 #code
 	  #que memoflow 标签 正则匹配 tag 加入 utf-8 中文 匹配
 	- #ans 
-	  khk
 	  ```
 	  const tagRegex = /(?<!#)#(?![#])[/\w\u4e00-\u9fff]+(?=\x20|\n)/g;
 	  ```
