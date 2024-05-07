@@ -1,11 +1,11 @@
 ## 2024/5/7 18:23:21:
 	- #tools
-	  #que logseq是什么？
+	  #que logseq 与 obsidian 是什么？
 	- #ans
-	  Logseq是一款开源的个人知识管理和笔记应用程序，它支持Markdown格式，可以帮助用户记录和组织
-	  各种类型的笔记和知识，并提供搜素和过滤功能帮助用户快速找到所需的信息.
-	  
+	  Logseq和Obsidian都是知识管理工具，用于组织、记录和连接思维。
+	  logseq 与 obsidian 共同点是都使用Markdown语法，支持双向链接和笔记之间的关联。它们都致力于帮助用户更好地组织和管理知识，提供了一种非线性的思维方式，让用户更容易跳转和发现相关的内容
 	  https://logseq.com/
+	  https://obsidian.md/
 - ## 2024/5/7 18:18:46:
 	- #code
 	  #que 支持代码块
