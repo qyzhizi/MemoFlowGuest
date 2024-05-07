@@ -2,9 +2,35 @@
 	- #code
 	  #que 支持代码块
 	- #ans
-	  ```python
-	  hello world!
+	  以下是 Go、Python 和 C++ 语言版本的 "Hello, World!" 程序示例：
+	  
+	  Go 语言版本：
+	  ```go
+	  package main
+	  
+	  import "fmt"
+	  
+	  func main() {
+	      fmt.Println("Hello, World!")
+	  }
 	  ```
+	  
+	  Python 版本：
+	  ```python
+	  print("Hello, World!")
+	  ```
+	  
+	  C++ 版本：
+	  ```cpp
+	  #include <iostream>
+	  
+	  int main() {
+	      std::cout << "Hello, World!" << std::endl;
+	      return 0;
+	  }
+	  ```
+	  
+	  这些程序分别使用了不同的语法和语言特性来输出 "Hello, World!" 到控制台。希望对你有帮助！如果有任何问题，请随时提问。
 - ## 2024/5/7 18:12:00:
 	- #latex 
 	  #que 支持 latex 公式
