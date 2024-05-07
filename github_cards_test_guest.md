@@ -7,9 +7,6 @@
 	  例如：
 	  Here is a LaTeX equation: $$\int_{-\infty}^{\infty} e^{-x^2} \, dx = \sqrt{\pi}$$  
 	  $\int_{a}^{b} x^2 \,dx = \frac{1}{3}x^3 \Big|_{a}^{b}$
-	  
-	  commit:
-	  https://github.com/qyzhizi/MemoFlow/commit/5204630cb9c884b9303e74e748e352181f7dc790
 - ## 2024/5/7 18:10:11:
 	- #tools
 	  #que logseq是什么？
