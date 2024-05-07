@@ -10,14 +10,23 @@
 
 有一个网页客户端，支持提交、浏览与编辑卡片笔记, 不支持 Markdown 语法, 但是支持 `#Tag`标签, Latex公式, 代码块与超链接。
 
-<div style="display:flex">
-  <div style="flex:4;padding-right:10px;">
-     <img src="https://qyzhizi.cn/img/202405071900184.png" width="400"/>   
-  </div>
-  <div style="flex:1;padding-left:10px;">
-    <img src="https://qyzhizi.cn/img/202405071900655.png" width="400"/>    
-  </div>
-</div>
+
+<p float="left">
+  <img src="https://qyzhizi.cn/img/202405071900184.png" width="65%"/>
+  <img src="https://qyzhizi.cn/img/202405071900655.png" width="30%"/>  
+</p>
+
+<table>
+  <tr>
+    <td>First Screen Page</td>
+     <td>Holiday Mention</td>
+  </tr>
+  <tr>
+    <td><img src="https://qyzhizi.cn/img/202405071900184.png" width=100% ></td>
+    <td><img src="https://qyzhizi.cn/img/202405071900655.png" width=100%></td>
+
+  </tr>
+ </table>
 
 ## Usage
 本项目实现卡片笔记的在线记录、同步(github 或者 坚果云)。你可以选择在本地使用docker部署，那么这个服务只会在本地运行。或者在云服务器部署，它将成为一个在线服务。
