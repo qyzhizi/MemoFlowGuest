@@ -1,4 +1,18 @@
-## 2024/5/7 21:25:06:
+## 2024/5/7 21:25:20:
+	- #code
+	  #que 支持代码块
+	- #ans
+	  Go 语言版本的 "Hello, World!" 程序示例：
+	  ```go
+	  package main
+	  
+	  import "fmt"
+	  
+	  func main() {
+	      fmt.Println("Hello, World!")
+	  }
+	  ```
+- ## 2024/5/7 21:25:06:
 	- #latex 
 	  #que 支持 latex 公式
 	- #ans
