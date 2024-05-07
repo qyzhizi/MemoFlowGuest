@@ -1,9 +1,9 @@
 ## 2024/5/7 18:23:21:
 	- #tools
-	  #que logseq 与 obsidian 是什么？
+	  #que Logseq 和 Obsidian 是什么？
 	- #ans
 	  Logseq和Obsidian都是知识管理工具，用于组织、记录和连接思维。
-	  logseq 与 obsidian 共同点是都使用Markdown语法，支持双向链接和笔记之间的关联。它们都致力于帮助用户更好地组织和管理知识，提供了一种非线性的思维方式，让用户更容易跳转和发现相关的内容
+	  共同点是都使用Markdown语法，支持双向链接和笔记之间的关联。它们都致力于帮助用户更好地组织和管理知识，提供了一种非线性的思维方式，让用户更容易跳转和发现相关的内容
 	  https://logseq.com/
 	  https://obsidian.md/
 - ## 2024/5/7 18:18:46:
