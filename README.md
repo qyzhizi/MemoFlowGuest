@@ -12,19 +12,22 @@
 
 
 <p float="left">
-  <img src="https://qyzhizi.cn/img/202405071900184.png" width="65%"/>
-  <img src="https://qyzhizi.cn/img/202405071900655.png" width="30%"/>  
+  <img src="https://qyzhizi.cn/img/202405071900184.png" title="Desktop web client" width="65%"/>
+  <img src="https://qyzhizi.cn/img/202405071900655.png" title="Mobile web client" width="30%"/>  
 </p>
+
+Solarized dark             |  Solarized Ocean
+:-------------------------:|:-------------------------:
+![](https://qyzhizi.cn/img/202405071900184.png)  |  ![](https://qyzhizi.cn/img/202405071900655.png)
 
 <table>
   <tr>
-    <td>First Screen Page</td>
-     <td>Holiday Mention</td>
+    <td>Desktop web client</td>
+     <td>Mobile web client</td>
   </tr>
   <tr>
     <td><img src="https://qyzhizi.cn/img/202405071900184.png" width=100% ></td>
     <td><img src="https://qyzhizi.cn/img/202405071900655.png" width=100%></td>
-
   </tr>
  </table>
 
