@@ -9,8 +9,6 @@
 	  #que 支持代码块
 	- #ans
 	  Go 语言版本的 "Hello, World!" 程序示例：
-	  
-	  Go 语言版本：
 	  ```go
 	  package main
 	  
