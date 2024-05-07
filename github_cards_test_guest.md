@@ -3,10 +3,9 @@
 	- #code
 	  #que 支持 latex 公式
 	- #ans
-	   公式使用 `$...$` 或者 `$$...$$` 来标识，前者是行内共公式，后者是行间公式
-	  例如：
-	  Here is a LaTeX equation: $$\int_{-\infty}^{\infty} e^{-x^2} \, dx = \sqrt{\pi}$$  
-	  $\int_{a}^{b} x^2 \,dx = \frac{1}{3}x^3 \Big|_{a}^{b}$
+	  公式使用 `$...$` 或者 `$$...$$` 来标识，前者是行内共公式，后者是行间公式
+	  行间公式: $$\int_{-\infty}^{\infty} e^{-x^2} \, dx = \sqrt{\pi}$$  
+	  行内共公式 : $\int_{a}^{b} x^2 \,dx = \frac{1}{3}x^3 \Big|_{a}^{b}$
 - ## 2024/5/7 18:10:11:
 	- #tools
 	  #que logseq是什么？
