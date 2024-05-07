@@ -21,7 +21,7 @@
 	  ```
 	  
 	  C++ 版本：
-	  ```cpp
+	  ```c++
 	  #include <iostream>
 	  
 	  int main() {
