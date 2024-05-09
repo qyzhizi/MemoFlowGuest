@@ -1,4 +1,75 @@
-## 2024/5/9 16:47:07:
+## 2024/5/9 17:03:27:
+  
+  
+  chatGPT
+  https://chat.openai.com/share/eab1707a-9e45-4723-8474-8c10d811be56
+  ```
+  function identifyElements(inputString) {
+      const codeBlockRegex = /```(.*?)```/gs; // 匹配代码块
+      const inlineCodeRegex = /`([^`]+)`/g; // 匹配行内代码
+      const urlRegex = /(https?:\/\/[^\s]+)/g; // 匹配URL
+  
+      let codeBlockList = [];
+      let inlineBlockList = [];
+      let urlList = [];
+      let textList = [];
+  
+      // 匹配代码块
+      let match;
+      while ((match = codeBlockRegex.exec(inputString)) !== null) {
+          codeBlockList.push([match.index, match.index + match[0].length - 1]);
+      }
+  
+      // 从代码块之外匹配行内代码
+      let codeBlockPositions = codeBlockList.flat();
+      let lastMatchEndIndex = 0;
+      while ((match = inlineCodeRegex.exec(inputString)) !== null) {
+          if (!codeBlockPositions.some(pos => match.index > pos && match.index < pos + 3) && match.index > lastMatchEndIndex) {
+              inlineBlockList.push([match.index, match.index + match[0].length - 1]);
+              lastMatchEndIndex = match.index + match[0].length;
+          }
+      }
+  
+      // 匹配URL
+      while ((match = urlRegex.exec(inputString)) !== null) {
+          urlList.push([match.index, match.index + match[0].length - 1]);
+      }
+  
+      // 提取文本
+      let lastIndex = 0;
+      for (let i = 0; i < codeBlockList.length || i < inlineBlockList.length || i < urlList.length; i++) {
+          let minIndex = Math.min(
+              codeBlockList[i] ? codeBlockList[i][0] : Infinity,
+              inlineBlockList[i] ? inlineBlockList[i][0] : Infinity,
+              urlList[i] ? urlList[i][0] : Infinity
+          );
+  
+          textList.push([lastIndex, minIndex - 1]);
+          lastIndex = minIndex;
+      }
+  
+      textList.push([lastIndex, inputString.length - 1]);
+  
+      return {
+          codeBlockList,
+          inlineBlockList,
+          urlList,
+          textList
+      };
+  }
+  
+  function getContent(inputString, positions) {
+      return positions.map(pos => inputString.substring(pos[0], pos[1] + 1));
+  }
+  
+  const inputString = "```123```串方法,https://www.fukonglzw.cn:5051/ 用于`dslfjs`查找";
+  const elements = identifyElements(inputString);
+  console.log("Code Block Content:", getContent(inputString, elements.codeBlockList));
+  console.log("Inline Code Content:", getContent(inputString, elements.inlineBlockList));
+  console.log("URL Content:", getContent(inputString, elements.urlList));
+  console.log("Text Content:", getContent(inputString, elements.textList));
+  ```
+- ## 2024/5/9 16:47:07:
   `@@` sdjfslfjsd;f
 - ## 2024/5/9 16:14:31:
     #正则匹配
