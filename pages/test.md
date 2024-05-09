@@ -1,7 +1,7 @@
 ## 2024/5/9 16:47:07:
   `@@` sdjfslfjsd;f
 - ## 2024/5/9 16:14:31:
-    ＃正则匹配
+    #正则匹配
 - ## 2024/5/9 15:34:50:
 	- #tools #windows
 	  #que Windows，微软官方出的 PowerToys，小工具集合，还是开源的。尤其是里面的 Text Extractor 用作 OCR 很方便。
