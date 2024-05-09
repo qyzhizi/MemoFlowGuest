@@ -7,24 +7,6 @@
 	  ```js
 	  
 	  
-	          Matches.push({
-	              type: PatternType,
-	              content: match[1],
-	          });
-	  
-	          // 更新lastIndex为当前代码块的结束位置
-	          lastIndex = match.index + match[0].length;
-	      }
-	  
-	      // 检查最后一个代码块后是否还有文本
-	      if (lastIndex < input.length) {
-	          Matches.push({
-	              type: 'text',
-	              content: input.substring(lastIndex),
-	          });
-	      }
-	      return Matches;
-	  }
 	  
 	  
 	  function subMatchPattern(Matches, urlPattern, urlPatternType){
