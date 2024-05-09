@@ -6,35 +6,48 @@
   ```
   function identifyElements(inputString) {
       const codeBlockRegex = /```(.*?)```/gs; // 匹配代码块
-      const inlineCodeRegex = /`([^`]+)`/g; // 匹配行内代码
+      const inlineCodeRegex = /(?<!``)`([^`]+)`/g; // 匹配行内代码
       const urlRegex = /(https?:\/\/[^\s]+)/g; // 匹配URL
-  
+    
       let codeBlockList = [];
       let inlineBlockList = [];
       let urlList = [];
       let textList = [];
-  
+    
       // 匹配代码块
       let match;
       while ((match = codeBlockRegex.exec(inputString)) !== null) {
+          console.log(match[0].length, match[1].length)
           codeBlockList.push([match.index, match.index + match[0].length - 1]);
       }
-  
+      console.log(codeBlockList)
+    
       // 从代码块之外匹配行内代码
-      let codeBlockPositions = codeBlockList.flat();
+      // let codeBlockPositions = codeBlockList.flat();
+      // console.log(codeBlockList)
+      codeBlockList.forEach(pos => {
+          const startPos = pos[0];
+          const endPos = pos[1];
+          // 在这里处理每个代码块
+          console.log(`Code block start position: ${startPos}`);
+          console.log(`Code block end position: ${endPos}`);
+      });
+  
       let lastMatchEndIndex = 0;
       while ((match = inlineCodeRegex.exec(inputString)) !== null) {
-          if (!codeBlockPositions.some(pos => match.index > pos && match.index < pos + 3) && match.index > lastMatchEndIndex) {
+          if (!codeBlockList.some(pos => match.index >= pos[0] && match.index <= pos[1]) && match.index > lastMatchEndIndex) {
+  
+              console.log(match.index, match.index + match[0].length - 1)
               inlineBlockList.push([match.index, match.index + match[0].length - 1]);
-              lastMatchEndIndex = match.index + match[0].length;
+              lastMatchEndIndex = match.index + match[0].length - 1;
           }
       }
-  
+    
       // 匹配URL
       while ((match = urlRegex.exec(inputString)) !== null) {
           urlList.push([match.index, match.index + match[0].length - 1]);
       }
-  
+    
       // 提取文本
       let lastIndex = 0;
       for (let i = 0; i < codeBlockList.length || i < inlineBlockList.length || i < urlList.length; i++) {
@@ -43,13 +56,13 @@
               inlineBlockList[i] ? inlineBlockList[i][0] : Infinity,
               urlList[i] ? urlList[i][0] : Infinity
           );
-  
+    
           textList.push([lastIndex, minIndex - 1]);
           lastIndex = minIndex;
       }
-  
+    
       textList.push([lastIndex, inputString.length - 1]);
-  
+    
       return {
           codeBlockList,
           inlineBlockList,
@@ -57,12 +70,13 @@
           textList
       };
   }
-  
+    
   function getContent(inputString, positions) {
       return positions.map(pos => inputString.substring(pos[0], pos[1] + 1));
   }
-  
-  const inputString = "```123```串方法,https://www.fukonglzw.cn:5051/ 用于`dslfjs`查找";
+    
+  const inputString = "```12对了师`傅js`ljfslfdjs3```串方法,https://www.fukonglzw.cn:5051/ 用于`dslfjs``sdfjsdldfjs`查找";
+  console.log(inputString)
   const elements = identifyElements(inputString);
   console.log("Code Block Content:", getContent(inputString, elements.codeBlockList));
   console.log("Inline Code Content:", getContent(inputString, elements.inlineBlockList));
