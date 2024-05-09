@@ -5,20 +5,7 @@
 	- #ans
 	  `2024-05-10更新后`
 	  ```js
-	  function matchPattern(input, Pattern, PatternType) {
-	      let match;
-	      let Matches = [];
-	      let lastIndex = 0; // 用于跟踪上一个匹配项的结束位置
 	  
-	      // 搜集所有行间代码块及其位置
-	      while ((match = Pattern.exec(input)) !== null) {
-	          // 检查并添加前一个代码块后和当前代码块前的非代码块文本
-	          if (match.index > lastIndex) {
-	              Matches.push({
-	                  type: 'text',
-	                  content: input.substring(lastIndex, match.index),
-	              });
-	          }
 	  
 	          Matches.push({
 	              type: PatternType,
