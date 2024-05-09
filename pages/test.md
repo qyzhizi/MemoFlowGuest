@@ -6,16 +6,6 @@
 	  `2024-05-10更新后`
 	  ```js
 	  
-	  
-	  
-	  function mulMatchPattern(input, codeBlockLinesPattern, inlinePattern, otherPatterns){
-	      let Matches = matchPattern(input, codeBlockLinesPattern.regex, codeBlockLinesPattern.type);
-	      subMatchPattern(Matches, inlinePattern.regex, inlinePattern.type)
-	      otherPatterns.forEach(element => {
-	          subMatchPattern(Matches, element.regex, element.type)
-	      }); 
-	      return Matches
-	  }
 	  const input = "sldfjsldfjsd;```111111111111111111```904https://abc.qyzhi.cn 65 $$a = b + c$$ 80,4`aaaaaa`0934https://x.com/deguang_li/status/1788026004990296432 85034`bbbbb``ccccc````2222222222222222````ddddd`05468045";
 	  var Matches = [];
 	  codeBlockLinesPattern = {regex:/```(?!`)([\s\S]+?)```/g, type: 'codeBlockBetweenLines'}
