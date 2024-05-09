@@ -6,7 +6,7 @@
 	  `2024-05-10更新后`
 	  ```js
 	  
-	  /g, type: 'inLinecodeBlock'}
+	  `/g, type: 'inLinecodeBlock'}
 	  otherPatterns = [
 	      {regex:/(https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-z]{2,6}\b(?:[-a-zA-Z0-9@:%_\+.~#?&/=]*))/g, type: 'url'},
 	      {regex:/(?:\s|\r?\n)*?\$\$([\s\S]*?)\$\$(?:\s|\r?\n)*?/g, type: 'MulLineslatex'}
