@@ -8,20 +8,6 @@
 	  
 	  
 	  
-	  
-	  function subMatchPattern(Matches, urlPattern, urlPatternType){
-	      let tempMatches = [...Matches];
-	      for(let i = 0, addItems = 0; i < tempMatches.length; i++){
-	          let item  = tempMatches[i];
-	          if (item.type == 'text'){
-	              let PatternMatches = matchPattern(item.content, urlPattern, urlPatternType);
-	              Matches.splice(i + addItems, 1, ...PatternMatches)
-	              addItems = addItems + PatternMatches.length - 1
-	          }
-	      }
-	  }
-	  
-	  
 	  function mulMatchPattern(input, codeBlockLinesPattern, inlinePattern, otherPatterns){
 	      let Matches = matchPattern(input, codeBlockLinesPattern.regex, codeBlockLinesPattern.type);
 	      subMatchPattern(Matches, inlinePattern.regex, inlinePattern.type)
