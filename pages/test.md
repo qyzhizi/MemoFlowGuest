@@ -1,6 +1,4 @@
 ## 2024/5/9 17:03:27:
-  
-  
   chatGPT
   https://chat.openai.com/share/eab1707a-9e45-4723-8474-8c10d811be56
   ```
