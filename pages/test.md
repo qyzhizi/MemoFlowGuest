@@ -1,4 +1,17 @@
-## 2024/5/4 20:49:00:
+## 2024/5/9 15:34:50:
+	- #tools #windows
+	  #que Windows，微软官方出的 PowerToys，小工具集合，还是开源的。尤其是里面的 Text Extractor 用作 OCR 很方便。
+	- #ans
+	  下载地址：https://learn.microsoft.com/zh-cn/windows/powertoys/
+	  源代码：https://github.com/microsoft/PowerToys
+	  
+	  当前 PowerToy 实用工具
+	  当前可用的实用工具包括：
+	  Always On Top
+	  📷Always On Top 使你能够使用快捷键 (⊞ Win+Ctrl+T) 将窗口固定在其他窗口之上。
+	  
+	  https://x.com/dotey/status/1788384863373939051
+- ## 2024/5/4 20:49:00:
 	- #code #memoflow
 	  #que 一个网页在手机端浏览器打开, 发送到手机桌面, 当以app形式打开时, 如何设置隐藏地址栏?
 	- #ans
