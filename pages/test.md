@@ -3,7 +3,7 @@
 	  #que Windows，微软官方出的 PowerToys，小工具集合，还是开源的。尤其是里面的 Text Extractor 用作 OCR 很方便。
 	- #ans
 	  下载地址：https://learn.microsoft.com/zh-cn/windows/powertoys/
-	  源代码：https://github.com/microsoft/PowerToys=
+	  源代码：https://github.com/microsoft/PowerToys
 	  
 	  当前 PowerToy 实用工具
 	  当前可用的实用工具包括：
