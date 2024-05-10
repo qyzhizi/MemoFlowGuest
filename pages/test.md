@@ -179,12 +179,15 @@
 	- #ans
 	  `aaaaaaaaaaaaa`
 	  让我们通过一个例子来说明这个概念：
+	  ```
+	  `sdjfslfjslf` `jj`  sldjflsfj `
+	  ```
 	  
 	  ```javascript
 	  function modifyArray(arr) {
 	    arr.push(4);
 	  }
-	  `sdjfslfjslf` `jj`  sldjflsfj `
+	  
 	  const myArray = [1, 2, 3];
 	  modifyArray(myArray);
 	  console.log(myArray); // 输出 [1, 2, 3, 4]
