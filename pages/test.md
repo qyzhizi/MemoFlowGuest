@@ -177,7 +177,7 @@
 	- #code 
 	  #que js 函数传参 有引用传递吗?
 	- #ans
-	  
+	  `aaaaaaaaaaaaa`
 	  让我们通过一个例子来说明这个概念：
 	  
 	  ```javascript
