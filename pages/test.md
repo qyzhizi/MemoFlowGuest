@@ -9,7 +9,6 @@
 	  as the embeddings, so that the two can be summed. There are many choices of positional encodings,
 	  learned and fixed [9].
 	  In this work, we use sine and cosine functions of different frequencies:
-	  
 	  $$PE_{(pos,2i)} = sin(pos/10000^{2i/d_{model}} )$$
 	  $$PE_{(pos,2i+1)} = cos(pos/10000^{2i/d_{model}} )$$
 	  where pos is the position and i is the dimension. That is, each dimension of the positional encoding
