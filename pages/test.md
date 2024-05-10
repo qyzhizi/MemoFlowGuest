@@ -178,7 +178,7 @@
 	  #que js 函数传参 有引用传递吗?
 	- #ans
 	  `aaaaaaaaaaaaa`
-	  ```Javascript
+	  ```
 	  ```
 	  https://abc.qyzhizi.cn lsdjfsl $a = b = c $
 	  $$a = b + c$$
