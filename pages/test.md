@@ -1,4 +1,12 @@
-## 2024/5/13 04:13:31:
+## 2024/5/13 04:22:00:
+	- #url
+	  #que url test
+	- #ans
+	  http://150.109.23.141:6060/v1/diary-log
+	  https://github.com/qyzhizi/python_logical/blob/main/2024-04-19-html-top-sticky/test.html#L17
+	  (https://arxiv.org/pdf/1603.07285.pdf)
+	  https://zh-v2.d2l.ai/chapter_computer-vision/transposed-conv.html
+- ## 2024/5/13 04:13:31:
   http://150.109.23.141:6060/v1/diary-log
 - ## 2024/5/10 22:58:02:
 	- #ai #transformer
