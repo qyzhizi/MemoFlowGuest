@@ -2,6 +2,7 @@
 	- #url
 	  #que url test
 	- #ans
+	  http://150.109.23.141
 	  http://150.109.23.141:6060
 	  http://150.109.23.141:6060/v1/diary-log
 	  https://github.com/qyzhizi/python_logical/blob/main/2024-04-19-html-top-sticky/test.html#L17
