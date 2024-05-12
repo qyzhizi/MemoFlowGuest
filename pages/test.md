@@ -1,4 +1,6 @@
-## 2024/5/10 22:58:02:
+## 2024/5/13 04:13:31:
+  http://150.109.23.141:6060/v1/diary-log
+- ## 2024/5/10 22:58:02:
 	- #ai #transformer
 	  #que transformer Positional Encoding
 	- #ans
