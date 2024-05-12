@@ -5,6 +5,7 @@
 	  http://150.109.23.141
 	  http://150.109.23.141/
 	  http://150.109.23.141:6060
+	  http://150.109.23.141:6060/
 	  http://150.109.23.141:6060/v1/diary-log
 	  https://github.com
 	  https://github.com/qyzhizi
