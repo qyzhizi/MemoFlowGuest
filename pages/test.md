@@ -1,5 +1,4 @@
 ## 2024/5/17 05:36:09:
-  @@ 2024/5/17 05:28:23:
 	- #code
 	  #que go what's the meaning of `bs, _ := json.MarshalIndent(resp, "", "    ")`
 	- #ans
