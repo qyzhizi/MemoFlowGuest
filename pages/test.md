@@ -1,4 +1,64 @@
-## 2024/5/17 04:50:16:
+## 2024/5/17 05:36:09:
+  @@ 2024/5/17 05:28:23:
+	- #code
+	  #que go what's the meaning of `bs, _ := json.MarshalIndent(resp, "", "    ")`
+	- #ans
+	  The line of code `bs, _ := json.MarshalIndent(resp, "", "    ")` is written in the Go programming language (Golang). Here's a breakdown of what it does:
+	  
+	  1. **`json.MarshalIndent`**: This function is part of the `encoding/json` package in Go. It is used to convert a Go object into a JSON string with indentation for easier readability.
+	  
+	  2. **`resp`**: This is the Go object that you want to convert to JSON. It could be any data structure that is supported by Go's JSON marshalling (e.g., struct, map, slice).
+	  
+	  3. **`""` (the second parameter)**: This parameter specifies the prefix to use for each JSON line. An empty string means no prefix.
+	  
+	  4. **`"    "` (the third parameter)**: This parameter specifies the indentation to use for each level of the JSON hierarchy. Here, it is set to four spaces.
+	  
+	  5. **`bs, _ := ...`**: This part assigns the result of `json.MarshalIndent` to two variables:
+	     - `bs` is a byte slice (`[]byte`) that contains the JSON-encoded data.
+	     - The underscore (`_`) is used to ignore the error value returned by `json.MarshalIndent`. This is common in Go when you are confident that there won't be an error or you simply want to ignore it.
+	  
+	  Putting it all together, this line of code converts the `resp` object into a pretty-printed JSON byte slice with an indentation of four spaces, ignoring any errors that might occur during the conversion.
+	  
+	  Here's an example of how this might look in a complete program:
+	  
+	  ```go
+	  package main
+	  
+	  import (
+	      "encoding/json"
+	      "fmt"
+	  )
+	  
+	  type Response struct {
+	      Name  string `json:"name"`
+	      Age   int    `json:"age"`
+	      Email string `json:"email"`
+	  }
+	  
+	  func main() {
+	      resp := Response{
+	          Name:  "Alice",
+	          Age:   30,
+	          Email: "alice@example.com",
+	      }
+	  
+	      bs, _ := json.MarshalIndent(resp, "", "    ")
+	      fmt.Println(string(bs))
+	  }
+	  ```
+	  
+	  In this example, `resp` is an instance of the `Response` struct. When `json.MarshalIndent` is called, it converts `resp` to a JSON-formatted byte slice with indented formatting. The resulting JSON string will look something like this:
+	  
+	  ```json
+	  {
+	      "name": "Alice",
+	      "age": 30,
+	      "email": "alice@example.com"
+	  }
+	  ```
+	  
+	  This JSON string is then printed to the console.
+- ## 2024/5/17 04:50:16:
   (`djfsldfjslf`)
 - ## 2024/5/17 04:50:04:
   `(dljd)`
