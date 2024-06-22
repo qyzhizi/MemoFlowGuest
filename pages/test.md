@@ -1,4 +1,140 @@
-## 2024/5/17 05:36:09:
+## 2024/6/22 15:26:13:
+  @@ 2024/6/21 10:52:07:
+	- #code 
+	  #que go 语言 包的访问规则
+	- #ans
+	  不同目录中文件是不可以直接互相访问?
+	  您的理解是正确的。在Go语言中,不同目录中的文件通常不能直接互相访问,除非它们属于同一个包。这是Go语言包管理和可见性规则的一部分。以下是一些关键点:
+	  
+	  1. 同一个包内的文件:
+	     - 如果文件在同一个目录下,并且都属于同一个包(例如都声明为`package main`),它们可以直接互相访问定义的类型、变量和函数,无需导入。
+	  
+	  2. 不同包的文件:
+	     - 如果文件在不同的目录下,或者属于不同的包,它们不能直接互相访问。
+	     - 要访问其他包中的内容,需要使用`import`语句导入该包。
+	  
+	  3. 可见性规则:
+	     - Go使用大小写来控制可见性。大写开头的标识符(如`Person`)是可导出的,可以被其他包访问。
+	     - 小写开头的标识符(如`person`)是包私有的,只能在同一个包内访问。
+	  
+	  4. 项目结构:
+	     - 通常,Go项目会将相关的功能组织在同一个包(目录)中。
+	     - 不同的功能模块可以放在不同的包(目录)中,通过导入来使用。
+	  
+	  5. 导入路径:
+	     - 导入其他包时,使用的是相对于项目根目录(通常是`$GOPATH/src`或模块根目录)的路径。
+	  
+	  例如,假设有以下项目结构:
+	  
+	  ```
+	  myproject/
+	      main.go
+	      utils/
+	          helper.go
+	  ```
+	  
+	  在这种情况下:
+		- `main.go`和`helper.go`不能直接互相访问,因为它们在不同的目录中。
+		- 如果`main.go`需要使用`helper.go`中定义的内容,需要在`main.go`中导入`utils`包:
+		  
+		  ```go
+		  import "myproject/utils"
+		  ```
+		  
+		  这种设计促进了代码的模块化和封装,有助于管理大型项目的复杂性。
+		  
+		  Citations:
+		  [1] https://github.com/golang/go/issues/44691
+		  [2] https://pkg.go.dev/io/fs
+		  [3] https://stackoverflow.com/questions/45429210/how-do-i-check-a-files-permissions-in-linux-using-go
+		  [4] https://pkg.go.dev/os
+		  [5] https://www.maths.cam.ac.uk/computing/linux/unixinfo/perms
+		  
+		  #sque 同属于 package main , 并且是同级文件夹
+		  #ans
+		  根据您的描述,这种情况确实是同属于package main,并且是同级文件夹的情况。在Go中,这是一种常见且有效的代码组织方式。以下是对这种情况的解释:
+		  
+		  1. 同属于package main:
+		     在Go中,一个可执行程序的入口点必须是package main。通常,我们会在同一个目录下创建多个.go文件,它们都声明为package main[1][2].
+		  
+		  2. 同级文件夹:
+		     这些文件位于同一个目录中。Go的包系统是基于目录的,而不是基于单个文件的[2][3].
+		  
+		  3. 编译行为:
+		     当你运行go build或go run时,Go编译器会自动将同一目录下所有声明为package main的.go文件编译在一起[1][3].
+		  
+		  4. 代码组织:
+		     这种方式允许你将大型的main包分割成多个文件,以提高代码的可读性和可维护性[2].
+		  
+		  5. 导入规则:
+		     在这些文件之间,你不需要使用import语句。所有在同一个包(在这种情况下是main包)中定义的类型、函数和变量都可以直接使用[4].
+		  
+		  例如,你可能有以下文件结构:
+		  
+		  ```
+		  myproject/
+		      main.go
+		      utils.go
+		      handlers.go
+		  ```
+		  
+		  这里的main.go、utils.go和handlers.go都声明为package main,它们可以直接相互访问彼此定义的函数和变量,无需导入。
+		  
+		  这种组织方式非常适合中小型项目。对于较大的项目,你可能需要考虑将某些功能拆分到单独的包中,以提高代码的模块化程度。
+		  
+		  Citations:
+		  [1] https://www.reddit.com/r/golang/comments/18471go/declare_package_main_in_files_other_than_main_file/
+		  [2] https://golangbot.com/go-packages/
+		  [3] https://stackoverflow.com/questions/20427890/does-it-make-sense-to-have-two-packages-in-the-same-directory
+		  [4] https://github.com/golang/go/issues/32504
+		  [5] https://go.dev/ref/mod
+		  
+		  #sque Person 在同级的另一个文件
+		  #ans
+		  在Go中,如果你想在同一个包的不同文件中使用某个类型(如Person结构体),你不需要显式导入该类型,因为Go会自动把同一包中的所有类型、变量和函数视为可见的。
+		  
+		  举个例子,假设你有两个文件:
+		  
+		  person.go:
+		  
+		  ```go
+		  package main
+		  
+		  type Person struct {
+		      Name string
+		      Age  int
+		  }
+		  ```
+		  
+		  main.go:
+		  
+		  ```go
+		  package main
+		  
+		  import "fmt"
+		  
+		  func main() {
+		      p := Person{
+		          Name: "Alice",
+		          Age:  30,
+		      }
+		      fmt.Printf("%+v\n", p)
+		  }
+		  ```
+		  
+		  在main.go中,你可以直接使用Person类型来创建实例,而不需要导入它,因为Person是在同一个main包中定义的。Go会在编译时自动把main包中的所有源文件合并处理。
+		  
+		  这种设计使得代码组织更加简洁,减少了不必要的导入,提高了可读性和可维护性。你只需要导入不同包中定义的类型。
+		  
+		  所以在Go中,通常的做法是按照逻辑将相关的类型、变量和函数放在同一个文件中,而不是为每个类型单独创建一个文件,除非该类型足够复杂,单独的文件能增加可读性。
+		  
+		  Citations:
+		  [1] https://icarus.cs.weber.edu/~dab/cs1410/textbook/5.Structures/header.html
+		  [2] https://courses.cs.washington.edu/courses/cse374/20au/lectures/12-structs-in-c/12-structs-in-c.pdf
+		  [3] https://www.reddit.com/r/golang/comments/ydxzyi/is_it_ok_to_have_a_separate_file_for_each_type/
+		  [4] https://stackoverflow.com/questions/3041797/how-to-use-a-defined-struct-from-another-source-file
+		  [5] https://www.skillvertex.com/blog/read-write-structure-from-to-a-file-in-c/
+- ## 2024/5/17 05:36:09:
 	- #code
 	  #que go what's the meaning of `bs, _ := json.MarshalIndent(resp, "", "    ")`
 	- #ans
