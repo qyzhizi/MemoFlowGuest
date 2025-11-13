@@ -1,4 +1,56 @@
-## 2025/11/13 18:57:28:
+## 2025/11/13 20:17:09:
+  这个提示说明你的 **远程分支（origin/main）被强制更新了**（因为你执行了 `git push -f`），而服务器上的本地分支 `main` 现在 **和远程分支历史不一致**。
+  换句话说，本地的 `main` 还保留着旧的提交历史，而远程的已经被你改写了。
+	- ---
+	- @@@ ✅ **最安全的解决办法：直接重置服务器上的分支**
+	- 如果你确定服务器上的修改可以被覆盖（即不需要保留服务器的旧提交），
+	  执行以下命令即可让本地（服务器）同步远程分支：
+	- ```bash
+	  git fetch origin
+	  git reset --hard origin/main
+	  ```
+	- 这样会让当前分支完全和远程 `main` 保持一致。
+	- ---
+	- @@@ ⚠️ 如果你想保留服务器上改动（例如还没推送的提交）
+	- 可以先保存一下你的修改再重置：
+	- ```bash
+	  git stash
+	  git fetch origin
+	  git reset --hard origin/main
+	  git stash pop
+	  ```
+	- 这样可以避免你服务器上未提交的更改被覆盖。
+	- ---
+	- @@@ 💡 解释为什么会这样：
+	- 你在本地执行了：
+	- ```bash
+	  git commit --amend
+	  git push origin main -f
+	  ```
+	- 这会**重写提交历史（commit hash 改变）**，
+	  所以远程 `main` 的提交链变了。
+	- 当服务器执行 `git pull` 时，它检测到：
+	- * 本地 `main` 和 `origin/main` 有**不同的历史分支**（divergent branches）；
+	  * 默认 `pull` 不知道你要“合并”还是“重置”。
+	- 因此 Git 提示你选择策略。
+	- ---
+	- @@@ ✅ 如果你想避免以后这种情况
+	- 可以在服务器上改成只**显式拉取**而不是 `pull`：
+	- ```bash
+	  git fetch origin
+	  git reset --hard origin/main
+	  ```
+	- 或者在执行 `pull` 时明确告诉 Git 不合并旧历史：
+	- ```bash
+	  git pull --rebase
+	  ```
+	- 或
+	- ```bash
+	  git pull --ff-only
+	  ```
+	- ---
+	- 要我帮你判断现在应该用哪种（保留服务器修改 / 覆盖同步远程）吗？
+- ## 2025/11/13 18:57:28:
 	- #que 111111
 	- sfjsjflsjflsjflsf
 	- lsfjlksjflsjflsjfls
