@@ -1,29 +1,27 @@
 ## 2025/11/13 12:38:54:
-	- ## 2025/11/11 16:05:11:
-	  #que some old and good GitHub repo
+	- #que some old and good GitHub repo
 	- #ans
 		- sjflsjfslfjlfj
-		        jslfjslfjlsfjlsfj
+		  jslfjslfjlsfjlsfj
 		- lsjfljsflsjfljf
 		- ```
-		        [root@VM-8-7-centos dl-repo]# git remote -v
-		        origin	git@github.com:qyzhizi/dl-repo.git (fetch)
-		        origin	git@github.com:qyzhizi/dl-repo.git (push)
-		- 
-		-       [root@VM-8-7-centos fluent-python-notes]# git remote -v
-		        origin	git@github.com:StdioA/fluent-python-notes.git (fetch)
-		        origin	git@github.com:StdioA/fluent-python-notes.git (push)
-		- 
-		-       [root@VM-8-7-centos REST-tutorial]# git remote -v
-		        origin	git@github.com:miguelgrinberg/REST-tutorial.git (fetch)
-		        origin	git@github.com:miguelgrinberg/REST-tutorial.git (push)
-		        ```
+		  [root@VM-8-7-centos dl-repo]# git remote -v
+		  origin	git@github.com:qyzhizi/dl-repo.git (fetch)
+		  origin	git@github.com:qyzhizi/dl-repo.git (push)
+		  
+		  [root@VM-8-7-centos fluent-python-notes]# git remote -v
+		  origin	git@github.com:StdioA/fluent-python-notes.git (fetch)
+		  origin	git@github.com:StdioA/fluent-python-notes.git (push)
+		  
+		  [root@VM-8-7-centos REST-tutorial]# git remote -v
+		  origin	git@github.com:miguelgrinberg/REST-tutorial.git (fetch)
+		  origin	git@github.com:miguelgrinberg/REST-tutorial.git (push)
+		  ```
 		- sjflsjflsjfljf
 		- sljflsjflsjfldsjf
 			- ```
-			          sjlfjslfjslfj
-		- 
-		-         ```
+			  sjlfjslfjslfj
+			    vv```
 		- lskflsjflsjflsjflj
 - ## 2025/11/13 12:00:15:
   jljljljljlj
