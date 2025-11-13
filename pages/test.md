@@ -1,10 +1,4 @@
-## 2025/11/13 13:29:53:
-	- #que sljflsjfljf
-	  sljflsjflsjfls
-	  sjflsjfslfjlsfj
-	- #ans
-		- ksjfkslfslf
-- ## 2025/11/13 12:38:54:
+## 2025/11/13 12:38:54:
 	- #que some old and good GitHub repo
 	- #ans
 		- sjflsjfslfjlfj
