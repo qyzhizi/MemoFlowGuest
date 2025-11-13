@@ -1,4 +1,113 @@
-## 2025/11/12 12:58:36:
+## 2025/11/13 10:15:46:
+  @@ 2025/11/11 12:46:29:
+	- #que jp 日本 云服务器 nginx.conf 配置文件的内容
+	- #ans
+		- `/etc/nginx/nginx.conf`
+		- ```nginx.conf
+		  user www-data;
+		  worker_processes auto;
+		  pid /run/nginx.pid;
+		  include /etc/nginx/modules-enabled/*.conf;
+		  
+		  events {
+		  	worker_connections 768;
+		  	# multi_accept on;
+		  }
+		  
+		  http {
+		   
+		   	##
+		  	# Basic Settings
+		  	##
+		   
+		   	sendfile on;
+		  	tcp_nopush on;
+		  	types_hash_max_size 2048;
+		  	# server_tokens off;
+		  	keepalive_timeout  65;
+		   
+		   	# server_names_hash_bucket_size 64;
+		  	# server_name_in_redirect off;
+		   
+		   	include /etc/nginx/mime.types;
+		  	default_type application/octet-stream;
+		   
+		   	##
+		  	# SSL Settings
+		  	##
+		   
+		   	ssl_protocols TLSv1 TLSv1.1 TLSv1.2 TLSv1.3; # Dropping SSLv3, ref: POODLE
+		  	ssl_prefer_server_ciphers on;
+		   
+		   	##
+		  	# Logging Settings
+		  	##
+		   
+		   	access_log /var/log/nginx/access.log;
+		  	error_log /var/log/nginx/error.log;
+		   
+		   	##
+		  	# Gzip Settings
+		  	##
+		   
+		   	gzip on;
+		   
+		   	# gzip_vary on;
+		  	# gzip_proxied any;
+		  	# gzip_comp_level 6;
+		  	# gzip_buffers 16 8k;
+		  	# gzip_http_version 1.1;
+		  	# gzip_types text/plain text/css application/json application/javascript text/xml application/xml application/xml+rss text/javascript;
+		   
+		   	##
+		  	# Virtual Host Configs
+		  	##
+		   
+		   	include /etc/nginx/conf.d/*.conf;
+		  	include /etc/nginx/sites-enabled/*;
+		   
+		           server {
+		              listen       80;      # HTTP
+		              server_name  43.163.217.171;         # 匹配所有主机（如IP）
+		   
+		              client_max_body_size 100m;
+		              client_body_buffer_size 20m;
+		   
+		               location / {
+		                  proxy_pass http://localhost:6060;
+		                  proxy_set_header HOST $host;
+		                  proxy_set_header X-Forwarded-Proto $scheme;
+		                  proxy_set_header X-Real-IP $remote_addr;
+		                  proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+		              }
+		          }	
+		          server {
+		              listen       443 ssl;
+		              server_name  memo.qyzhizi.cn;
+		   
+		               ssl_certificate     /etc/nginx/conf.d/memo.qyzhizi.cn_bundle.crt;
+		              ssl_certificate_key /etc/nginx/conf.d/memo.qyzhizi.cn.key;
+		   
+		               ssl_session_cache    shared:SSL:1m;
+		               ssl_session_timeout  5m;
+		   
+		               ssl_ciphers  HIGH:!aNULL:!MD5;
+		              ssl_prefer_server_ciphers  on;
+		              client_max_body_size 100m;
+		              client_body_buffer_size 20m;
+		   
+		               location / {
+		                  proxy_pass http://localhost:6060;
+		                  proxy_set_header HOST $host;
+		                  proxy_set_header X-Forwarded-Proto $scheme;
+		                  proxy_set_header X-Real-IP $remote_addr;
+		                  proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+		              }
+		          }
+		   
+		  }
+		  ```
+- ## 2025/11/12 12:58:36:
 	- #que slfjsljfslfjlsfj
 	- #ans
 		- slfjslfjsljfsljfsl
