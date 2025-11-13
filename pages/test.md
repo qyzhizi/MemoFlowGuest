@@ -1,12 +1,8 @@
 ## 2025/11/13 15:04:03:
 	- #que some old and good GitHub repo
 	  hhhhhhhhhhh
-	- #ans
-		- sjflsjfslfjlfj
-		    sjflfjsljflfjlfj
-		    slfjsljfsljflsfjlf
-		- lsjfljsflsjfljf
-		  slfjslfjslfjlsf
+- sjfsjflfjlsjf
+  slfjsljflsjflfjs
 - ## 2025/11/13 14:54:24:
 	- #que some old and good GitHub repo
 	  hhhhhhhhhhh
